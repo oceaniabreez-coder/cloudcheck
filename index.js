@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/",(req,res)=>{
-    res.send("server is running now");
+    res.send("server is running then");
 
 })
 
