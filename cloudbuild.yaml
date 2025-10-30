@@ -4,7 +4,4 @@ options:
 steps : 
   - name : gcr.io/google.com/cloudsdktool/cloud-sdk
     entrypoint : bash
-    args : 
-      - -c
-      - |
-      - gcloud app deploy --project=$PROJECT_ID
+    args : ['-c', 'gcloud app deploy app.yaml --quiet --project="$PROJECT_ID"']
